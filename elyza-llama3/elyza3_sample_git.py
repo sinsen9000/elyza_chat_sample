@@ -80,7 +80,7 @@ if __name__ == '__main__':
 
         print(prompt)
         for j in range(6):
-            output = rinna_text2text(tokenizer, model,prompt,topk=40,stream=True)
+            output = rinna_text2text(tokenizer, model,prompt,topk=40)
             output = output.replace("<|eot_id|>","")
             output = output.replace("\n","__")
             print(output)
